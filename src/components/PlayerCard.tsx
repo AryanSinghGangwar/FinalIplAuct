@@ -146,7 +146,7 @@ export function PlayerCard({ player }: PlayerCardProps) {
           <div className="relative">
             {/* Batter Text */}
             <div className="absolute -top-4 right-0 bg-red-600/90 px-3 py-0.5 rounded-full transform -rotate-3 shadow-lg">
-              <span className="text-sm font-['Teko'] text-white tracking-wider">Bowlers</span>
+              <span className="text-sm font-['Teko'] text-white tracking-wider">All-rounders</span>
             </div>
             
             <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/20 to-blue-500/20 blur-lg" />
@@ -174,7 +174,7 @@ export function PlayerCard({ player }: PlayerCardProps) {
 
             <div className="bg-white/5 backdrop-blur-md rounded-xl p-3 flex items-center gap-3 border border-white/10 shadow-lg">
               <Target className="w-6 h-6 text-yellow-300" />
-              <span className="text-lg font-['Teko'] text-white">Avg: {player.Average}</span>
+              <span className="text-lg font-['Teko'] text-white">Runs: {player.Run}</span>
             </div>
           </div>
 

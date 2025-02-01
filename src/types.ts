@@ -5,5 +5,6 @@ export interface Player {
   Wickets: number;
   'Economy': number;
   Average: number;
+  Run: number;
   'Image Link': string;
 }
