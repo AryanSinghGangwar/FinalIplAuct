@@ -34,7 +34,7 @@ export function PlayerCard({ player }: PlayerCardProps) {
             <div className="absolute inset-0 bg-gradient-to-l from-blue-500/30 to-transparent blur-3xl animate-pulse delay-75" />
           </div>
           <img
-            src={player['Image Link'] || 'https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=500&h=400&fit=crop'}
+            src={player['Image Link'] || 'https://static.vecteezy.com/system/resources/previews/005/544/718/original/profile-icon-design-free-vector.jpg'}
             alt={player.Name}
             className="h-full w-full object-cover object-center transform hover:scale-110 transition-transform duration-500"
             style={{ 
