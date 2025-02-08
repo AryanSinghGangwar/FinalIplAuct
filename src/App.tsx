@@ -47,7 +47,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen stadium-pattern">
+    <div className="min-h-screen stadium-pattern overflow-x-hidden overflow-y-hidden">
       <div className="min-h-screen bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.1),transparent)] py-8 px-4">
         {players.length === 0 ? (
           <div className="flex flex-col items-center justify-center min-h-[80vh]">
