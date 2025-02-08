@@ -22,7 +22,7 @@ function App() {
         const values = line.split(',').map(value => value.trim());
         return headers.reduce((obj, header, index) => {
           const value = values[index];
-          if (['Matches', 'Runs', 'Strike Rate', 'Average'].includes(header)) {
+          if (['Match', 'Run', 'Wickets', 'Economy'].includes(header)) {
             obj[header] = parseFloat(value) || 0;
           } else {
             obj[header] = value;
@@ -48,7 +48,7 @@ function App() {
 
   return (
     <div className="min-h-screen stadium-pattern">
-      <div className="min-h-screen bg-gradient-to-b from-purple-900/50 to-blue-900/50 py-8 px-4">
+      <div className="min-h-screen bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.1),transparent)] py-8 px-4">
         {players.length === 0 ? (
           <div className="flex flex-col items-center justify-center min-h-[80vh]">
             <label className="flex flex-col items-center gap-4 p-8 bg-white/10 backdrop-blur-md rounded-xl shadow-2xl cursor-pointer hover:bg-white/20 transition-colors border border-white/20">
@@ -64,8 +64,6 @@ function App() {
           </div>
         ) : (
           <div className="max-w-7xl mx-auto">
-           
-            
             <div className="flex items-center justify-center gap-8">
               <button
                 onClick={handlePrev}
@@ -74,7 +72,7 @@ function App() {
                 <ChevronLeft className="w-8 h-8 text-white" />
               </button>
 
-              <div key={key} className="flex justify-center">
+              <div key={key} className="flex justify-center items-center min-h-[80vh]">
                 <PlayerCard player={players[currentIndex]} />
               </div>
 
@@ -98,4 +96,4 @@ function App() {
   );
 }
 
-export default App
+export default App;

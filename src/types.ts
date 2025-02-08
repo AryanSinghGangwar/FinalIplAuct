@@ -7,4 +7,6 @@ export interface Player {
   Average: number;
   Run: number;
   'Image Link': string;
+  Position : string;
+  Country : string;
 }
